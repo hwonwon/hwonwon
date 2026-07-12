@@ -8,6 +8,7 @@
     .num { fill: #E3B341; }
     .dim { fill: #575E68; font-size: 12px; }
     .lbl { fill: #575E68; font-size: 11px; letter-spacing: .14em; }
+    .kv  { fill: #8B949E; font-size: 12.5px; }
     .name { fill: #E6EDF3; font-size: 28px; font-weight: 700; }
     .sub  { fill: #3FB950; font-size: 14px; font-weight: 600; }
     .ln { opacity: 0; animation: in .4s ease-out forwards; }
@@ -126,11 +127,11 @@
   </g>
   <g class="ln d5">
     <text x="576" y="220" class="f">cluster</text>
-    <text x="676" y="220" class="o">on-prem Kubernetes</text>
+    <text x="648" y="220" class="kv">on-prem Kubernetes</text>
     <text x="576" y="247" class="f">coverage</text>
-    <text x="676" y="247" class="o">security · infra · network</text>
+    <text x="648" y="247" class="kv">security · infra · network</text>
     <text x="576" y="274" class="f">mode</text>
-    <text x="676" y="274" class="o">design → build → operate</text>
+    <text x="648" y="274" class="kv">design → build → operate</text>
   </g>
   <g class="ln d6">
     <line x1="576" y1="298" x2="844" y2="298" stroke="#1E2530" stroke-width="1"/>
