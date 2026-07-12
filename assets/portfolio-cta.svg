@@ -1,0 +1,44 @@
+<svg width="880" height="96" viewBox="0 0 880 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="포트폴리오 — hwonwon.github.io">
+  <style>
+    .ko { font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .l1 { fill: #8B949E; font-size: 14px; }
+    .l2 { fill: #E6EDF3; font-size: 14.5px; font-weight: 600; }
+    .lbl { fill: #575E68; font-size: 10px; letter-spacing: .18em; }
+    .url { fill: #3FB950; font-size: 15.5px; font-weight: 600; }
+    .ln { opacity: 0; animation: in .5s ease-out forwards; }
+    .d1 { animation-delay: .15s } .d2 { animation-delay: .35s } .d3 { animation-delay: .55s }
+    @keyframes in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+    .arrow { animation: nudge 2.2s ease-in-out infinite; }
+    @keyframes nudge { 0%, 100% { transform: translate(0,0); } 50% { transform: translate(3px,-3px); } }
+    .cur { fill: #3FB950; animation: blink 1.1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <defs>
+    <clipPath id="box"><rect x="1" y="1" width="878" height="94" rx="10"/></clipPath>
+  </defs>
+
+  <rect x="1" y="1" width="878" height="94" rx="10" fill="#0C1117"/>
+  <g clip-path="url(#box)">
+    <rect x="1" y="1" width="4" height="94" fill="#3FB950"/>
+  </g>
+  <rect x="1" y="1" width="878" height="94" rx="10" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- tagline -->
+  <g class="ln d1">
+    <text x="44" y="43" class="ko l1">보안 도구를 사서 쓰는 데 그치지 않고,</text>
+  </g>
+  <g class="ln d2">
+    <text x="44" y="68" class="ko l2">필요한 시스템을 직접 만들어 운영합니다.</text>
+  </g>
+
+  <!-- portfolio link -->
+  <g class="ln d3">
+    <text x="808" y="40" text-anchor="end" class="mono lbl">PORTFOLIO — CASE STUDIES</text>
+    <text x="808" y="66" text-anchor="end" class="mono url">hwonwon.github.io</text>
+    <g class="arrow">
+      <path d="M818 54 L830 54 L830 66 M830 54 L817 67" stroke="#3FB950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
