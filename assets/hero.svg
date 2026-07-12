@@ -1,0 +1,72 @@
+<svg width="880" height="320" viewBox="0 0 880 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="장호원 — Security &amp; Infrastructure Engineer">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; }
+    .p   { fill: #3FB950; }
+    .c   { fill: #E6EDF3; }
+    .o   { fill: #8B949E; }
+    .dir { fill: #58A6FF; }
+    .num { fill: #E3B341; }
+    .dim { fill: #575E68; font-size: 12px; }
+    .name { fill: #E6EDF3; font-size: 27px; font-weight: 700; }
+    .sub  { fill: #3FB950; font-size: 15px; font-weight: 600; }
+    .ln { opacity: 0; animation: in .45s ease-out forwards; }
+    .d1 { animation-delay: .25s } .d2 { animation-delay: .85s }
+    .d3 { animation-delay: 1.25s } .d4 { animation-delay: 2.0s }
+    .d5 { animation-delay: 2.45s } .d6 { animation-delay: 2.7s }
+    .d7 { animation-delay: 3.4s } .d8 { animation-delay: 3.9s }
+    @keyframes in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+    .cursor { animation: blink 1.1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <defs>
+    <clipPath id="win"><rect x="1" y="1" width="878" height="318" rx="10"/></clipPath>
+  </defs>
+
+  <!-- window -->
+  <rect x="1" y="1" width="878" height="318" rx="10" fill="#0C1117"/>
+  <g clip-path="url(#win)">
+    <rect x="1" y="1" width="878" height="40" fill="#161B22"/>
+    <line x1="1" y1="41" x2="879" y2="41" stroke="#21262D" stroke-width="1"/>
+  </g>
+  <rect x="1" y="1" width="878" height="318" rx="10" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- traffic lights + title -->
+  <circle cx="26" cy="21" r="5.5" fill="#FF5F57"/>
+  <circle cx="46" cy="21" r="5.5" fill="#FEBC2E"/>
+  <circle cx="66" cy="21" r="5.5" fill="#28C840"/>
+  <text x="440" y="26" text-anchor="middle" class="dim">howon@sec-ops — zsh</text>
+
+  <!-- $ whoami -->
+  <g class="ln d1">
+    <text x="36" y="80"><tspan class="p">$</tspan><tspan class="c" dx="10">whoami</tspan></text>
+  </g>
+  <g class="ln d2">
+    <text x="36" y="119" class="name">장호원 — Howon Jang</text>
+  </g>
+  <g class="ln d3">
+    <text x="36" y="146" class="sub">Security &amp; Infrastructure Engineer</text>
+  </g>
+
+  <!-- $ ls ~/production -->
+  <g class="ln d4">
+    <text x="36" y="188"><tspan class="p">$</tspan><tspan class="c" dx="10">ls ~/production/</tspan></text>
+  </g>
+  <g class="ln d5">
+    <text y="214"><tspan x="36" class="dir">erp-anomaly-detect/</tspan><tspan x="240" class="dir">file-exfil-audit/</tspan><tspan x="420" class="dir">pii-access-audit/</tspan></text>
+  </g>
+  <g class="ln d6">
+    <text y="236"><tspan x="36" class="dir">network-dashboard/</tspan><tspan x="240" class="dir">helpdesk-ai/</tspan><tspan x="420" class="dir">sw-portal/</tspan></text>
+  </g>
+
+  <!-- status line -->
+  <g class="ln d7">
+    <text y="276"><tspan x="36" fill="#3FB950">●</tspan><tspan x="56" class="o">​<tspan class="num">6</tspan> systems in production — on-prem Kubernetes</tspan></text>
+  </g>
+
+  <!-- trailing prompt -->
+  <g class="ln d8">
+    <text x="36" y="302" class="p">$</text>
+    <rect x="54" y="290" width="9" height="15" fill="#3FB950" class="cursor"/>
+  </g>
+</svg>

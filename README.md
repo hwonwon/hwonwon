@@ -1,10 +1,10 @@
 <div align="center">
 
-# 장호원 · Howon Jang
+<img src="assets/hero.svg" width="100%" alt="장호원 — Security &amp; Infrastructure Engineer" />
 
-**Security & Infrastructure Engineer**
+<br><br>
 
-보안 도구를 사서 쓰는 데 그치지 않고, 필요한 시스템을 직접 만들어 운영합니다.
+**보안 도구를 사서 쓰는 데 그치지 않고, 필요한 시스템을 직접 만들어 운영합니다.**
 
 </div>
 
