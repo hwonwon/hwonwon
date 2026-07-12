@@ -1,0 +1,106 @@
+<svg width="880" height="150" viewBox="0 0 880 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="보안 도구를 사서 쓰는 데 그치지 않고, 필요한 시스템을 직접 만들어 운영합니다 — 포트폴리오 hwonwon.github.io">
+  <style>
+    .ko   { font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .eyeb { fill: #575E68; font-size: 10px; letter-spacing: .16em; }
+    .l1   { fill: #8B949E; font-size: 14px; }
+    .l2   { fill: #E6EDF3; font-size: 16px; font-weight: 700; }
+    .lbl  { fill: #575E68; font-size: 10px; letter-spacing: .18em; }
+    .url  { font-size: 15.5px; font-weight: 600; animation: urlglow 2.6s ease-in-out infinite; }
+    @keyframes urlglow { 0%, 100% { fill: #3FB950; } 50% { fill: #7CE38B; } }
+
+    .ln { opacity: 0; animation: in .5s ease-out forwards; }
+    .d1 { animation-delay: .15s } .d2 { animation-delay: .4s }
+    .d3 { animation-delay: .65s } .d4 { animation-delay: .9s }
+    @keyframes in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+
+    /* radar sweep */
+    .sweep { transform-origin: 575px 76px; animation: spin 4s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .ring { transform-origin: 575px 76px; animation: ping 3.2s ease-out infinite; }
+    @keyframes ping { 0% { transform: scale(.25); opacity: .7; } 70% { opacity: 0; } 100% { transform: scale(2.1); opacity: 0; } }
+
+    /* blips flash as the beam passes (4s cycle, synced to sweep angle) */
+    .blip { animation: flash 4s linear infinite; }
+    .b1 { animation-delay: .4s } .b2 { animation-delay: 1.9s } .b3 { animation-delay: 3.1s }
+    @keyframes flash { 0% { opacity: 0; } 3% { opacity: 1; } 30% { opacity: .25; } 60% { opacity: .1; } 100% { opacity: 0; } }
+
+    /* EKG trace */
+    .trace {
+      stroke-dasharray: 80 560;
+      animation: run 3.4s linear infinite;
+    }
+    @keyframes run { from { stroke-dashoffset: 640; } to { stroke-dashoffset: 0; } }
+
+    .arrow { animation: nudge 2.2s ease-in-out infinite; }
+    @keyframes nudge { 0%, 100% { transform: translate(0,0); } 50% { transform: translate(3px,-3px); } }
+  </style>
+
+  <defs>
+    <clipPath id="box"><rect x="1" y="1" width="878" height="148" rx="10"/></clipPath>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0 H0 V36" stroke="#1B222C" stroke-width="1" fill="none"/>
+    </pattern>
+    <linearGradient id="sweepFade" x1="575" y1="76" x2="620" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FB950" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#3FB950" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="radarBg" cx="575" cy="76" r="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FB950" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#3FB950" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- frame -->
+  <rect x="1" y="1" width="878" height="148" rx="10" fill="#0C1117"/>
+  <g clip-path="url(#box)">
+    <rect x="1" y="1" width="878" height="148" fill="url(#grid)" opacity=".5"/>
+    <rect x="1" y="1" width="4" height="148" fill="#3FB950"/>
+  </g>
+  <rect x="1" y="1" width="878" height="148" rx="10" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- left: tagline -->
+  <g class="ln d1">
+    <text x="44" y="42" class="mono eyeb">// SECURITY &amp; INFRASTRUCTURE ENGINEER</text>
+  </g>
+  <g class="ln d2">
+    <text x="44" y="74" class="ko l1">보안 도구를 사서 쓰는 데 그치지 않고,</text>
+  </g>
+  <g class="ln d3">
+    <text x="44" y="101" class="ko l2">필요한 시스템을 직접 만들어 운영합니다.</text>
+  </g>
+
+  <!-- EKG trace -->
+  <g class="ln d4">
+    <path d="M44 128 H150 L160 114 L170 138 L178 128 H300 L310 116 L322 136 L330 128 H488" stroke="#1E2530" stroke-width="1.5" fill="none"/>
+    <path class="trace" d="M44 128 H150 L160 114 L170 138 L178 128 H300 L310 116 L322 136 L330 128 H488" stroke="#3FB950" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- radar -->
+  <g class="ln d3">
+    <circle cx="575" cy="76" r="52" fill="url(#radarBg)"/>
+    <circle cx="575" cy="76" r="52" stroke="#1E2530" stroke-width="1"/>
+    <circle cx="575" cy="76" r="36" stroke="#1E2530" stroke-width="1"/>
+    <circle cx="575" cy="76" r="20" stroke="#1E2530" stroke-width="1"/>
+    <line x1="523" y1="76" x2="627" y2="76" stroke="#1E2530" stroke-width="1"/>
+    <line x1="575" y1="24" x2="575" y2="128" stroke="#1E2530" stroke-width="1"/>
+    <circle class="ring" cx="575" cy="76" r="26" stroke="#3FB950" stroke-width="1"/>
+    <g class="sweep">
+      <path d="M575 76 L575 26 A50 50 0 0 1 610 38 Z" fill="url(#sweepFade)"/>
+      <line x1="575" y1="76" x2="575" y2="26" stroke="#3FB950" stroke-width="1.5" stroke-linecap="round" opacity=".9"/>
+    </g>
+    <circle class="blip b1" cx="597" cy="50" r="3.5" fill="#3FB950"/>
+    <circle class="blip b2" cx="551" cy="98" r="3" fill="#E3B341"/>
+    <circle class="blip b3" cx="602" cy="94" r="3" fill="#3FB950"/>
+    <circle cx="575" cy="76" r="3" fill="#3FB950"/>
+  </g>
+
+  <!-- right: portfolio link -->
+  <g class="ln d4">
+    <text x="830" y="58" text-anchor="end" class="mono lbl">PORTFOLIO — CASE STUDIES</text>
+    <text x="830" y="86" text-anchor="end" class="mono url">hwonwon.github.io</text>
+    <g class="arrow">
+      <path d="M841 74 L853 74 L853 86 M853 74 L840 87" stroke="#3FB950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

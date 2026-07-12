@@ -5,7 +5,7 @@
 <br>
 
 <a href="https://hwonwon.github.io">
-  <img src="assets/portfolio-cta.svg" width="100%" alt="보안 도구를 사서 쓰는 데 그치지 않고, 필요한 시스템을 직접 만들어 운영합니다 — 포트폴리오 hwonwon.github.io" />
+  <img src="assets/portfolio-banner.svg" width="100%" alt="보안 도구를 사서 쓰는 데 그치지 않고, 필요한 시스템을 직접 만들어 운영합니다 — 포트폴리오 hwonwon.github.io" />
 </a>
 
 </div>
