@@ -127,11 +127,11 @@
   </g>
   <g class="ln d5">
     <text x="576" y="220" class="f">cluster</text>
-    <text x="648" y="220" class="kv">on-prem Kubernetes</text>
+    <text x="648" y="220" class="kv" textLength="135" lengthAdjust="spacingAndGlyphs">on-prem Kubernetes</text>
     <text x="576" y="247" class="f">coverage</text>
-    <text x="648" y="247" class="kv">security · infra · network</text>
+    <text x="648" y="247" class="kv" textLength="190" lengthAdjust="spacingAndGlyphs">security · infra · network</text>
     <text x="576" y="274" class="f">mode</text>
-    <text x="648" y="274" class="kv">design → build → operate</text>
+    <text x="648" y="274" class="kv" textLength="178" lengthAdjust="spacingAndGlyphs">design → build → operate</text>
   </g>
   <g class="ln d6">
     <line x1="576" y1="298" x2="844" y2="298" stroke="#1E2530" stroke-width="1"/>

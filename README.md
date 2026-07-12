@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="장호원 — Security &amp; Infrastructure Engineer" />
+<img src="assets/hero-board.svg" width="100%" alt="장호원 — Security &amp; Infrastructure Engineer" />
 
 <br><br>
 
